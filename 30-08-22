@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+ char str[30];
+ int i;
+ printf("ENTER a string");
+ gets(str);
+ for(i=0;str[i]!='\0';i++)
+ {
+   if(str[i]=='a')
+   {
+     str[i]=str[i]-32;
+   }
+   else
+   {
+     str[i]=str[i];
+   }
+
+ }
+ puts(str);
+ 
+  return 0;
+}
